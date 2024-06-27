@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+Enter Email ID:
+<input type="text" id="t1" name="t1">
+<br>
+<input type="submit" value="Check" onclick="valid()">
+</form>
+</body>
+</html>
+
+<script>
+function valid()
+{
+	var s1=document.getElementById("t1").value;
+	var pat=/^[a-zA-Z0-9.]+\@[a-zA-Z]+\.[a-zA-Z]{3}$/;
+	if(s1.match(pat))
+	{	
+		alert("Valid Email ID:"+s1);
+	}
+	else
+	{
+		alert("Invalid Email ID:"+s1);
+	}
+}
+
+</script>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<h2 align=center> Details </h2>
+<table>
+<form>
+Enter Age:
+	<input type="number" placeholder="Enter the age" id="t1"> 
+<br>
+</br>
+Result:
+	<input type="text" name="t2" id="t2"> <br> </br>
+	<input type="button" value="OK" onclick="show()">
+</form>
+</table>
+</body>
+</html>
+<script language="javascript">
+	function show()
+	{
+		var a=document.getElementById("t1").value;
+		if(a<=0)
+			document.getElementById("t2").value="-ve age not allowed";
+		else if(a>100)
+			alert("Age Cannot Be Greater Than 100");
+		else
+			alert("Age="+a);
+
+	}
+</script>

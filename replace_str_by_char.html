@@ -1,0 +1,14 @@
+<script>
+var s=prompt("Enter String:");
+document.write("<h1>Original String="+s);
+document.write("<h1>Replace String=");
+for(i=0;i<s.length;i++)
+{
+	if(s[i]==' ')
+		document.write('*');
+	else if(s[i]>='0' && s[i]<='9')
+		document.write('?');
+	else
+		document.write(s[i]);
+}
+</script>

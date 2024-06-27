@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+Enter PanCard No:
+<input type="text" id="t1" name="t1">
+<br>
+<input type="submit" value="Check" onclick="valid()">
+</form>
+</body>
+</html>
+
+<script>
+function valid()
+{
+	var s1=document.getElementById("t1").value;
+	var pat="[A-Z]{5}[0-9]{4}[A-Z]{1}";
+	if(s1.match(pat))
+	{	
+		alert("Valid Pancard:"+s1);
+	}
+	else
+	{
+		alert("Invalid Pancard:"+s1);
+	}
+}
+
+</script>

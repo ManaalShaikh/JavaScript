@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+Enter Adhar No:
+<input type="text" id="t1" name="t1">
+<br>
+<input type="submit" value="Check" onclick="valid()">
+</form>
+</body>
+</html>
+
+<script>
+function valid()
+{
+	var s1=document.getElementById("t1").value;
+	var pat="[0-9]{12}";
+	if(s1.match(pat))
+	{	
+		alert("Valid Adhar No:"+s1);
+	}
+	else
+	{
+		alert("Invalid Adhar No:"+s1);
+	}
+}
+
+</script>
